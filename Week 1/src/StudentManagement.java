@@ -1,5 +1,4 @@
 import java.util.ArrayList;
-import java.util.HashSet;
 import java.util.Iterator;
 
 
@@ -8,20 +7,14 @@ public class StudentManagement
 
     // TODO: khai báo thuộc tính students là array chứa các đối tượng thuộc lớp Student (max. 100)
     private ArrayList<Student> student = new ArrayList<Student>(100);
-    private HashSet<String> listGroup = new HashSet<String>();
-    private HashSet<String> listID = new HashSet<String>();
+    private ArrayList<String> listGroup = new ArrayList<String>();
+    private ArrayList<String> listID = new HArrayList<String>();
 
     public void addStudent(Student s)
     {
         if( listID.add( s.getID() ) )
         {
-            System.out.println("Add student complete: " + s.getID() );
             student.add(s);
-            return;
-        }
-        else
-        {
-            System.out.println("Id has been using!");
             return;
         }
     }
@@ -59,15 +52,6 @@ public class StudentManagement
     public void removeStudent(String id)
     {
         // TODO:
-
-        /* cach 1
-        for(int i=0;i<student.size();i++)
-        {
-            if( student.get(i).getID().equals(id)) student.remove( student.get(i) );
-        }*/
-
-        // cach remove 2
-
         Iterator<Student> studentIterator = student.iterator();
         while(studentIterator.hasNext())
         {
