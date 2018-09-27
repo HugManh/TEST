@@ -38,7 +38,6 @@ public class StudentManagement
         {
             String groupTemp = groupIterator.next();
             if( groupTemp == null ) return;
-            System.out.println( "Group: " + groupTemp);
             for( int i=0;i<student.size();i++ )
             {
                 if( student.get(i).getGroup().equals( groupTemp ) )
