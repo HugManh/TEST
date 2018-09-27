@@ -68,7 +68,7 @@ public class StudentManagement
         Student s1 = new Student("Phạm Hùng Mạnh", "17020882","17020882@vnu.edu.vn");
         Student s2 = new Student();
 
-        s2.setName("Hùng Mạnh");
+        s2.setName("Pham Van Duc");
 
 
 
