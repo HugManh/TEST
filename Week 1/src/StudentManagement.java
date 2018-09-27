@@ -8,7 +8,7 @@ public class StudentManagement
     // TODO: khai báo thuộc tính students là array chứa các đối tượng thuộc lớp Student (max. 100)
     private ArrayList<Student> student = new ArrayList<Student>(100);
     private ArrayList<String> listGroup = new ArrayList<String>();
-    private ArrayList<String> listID = new HArrayList<String>();
+    private ArrayList<String> listID = new ArrayList<String>();
 
     public void addStudent(Student s)
     {
