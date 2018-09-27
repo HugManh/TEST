@@ -80,9 +80,6 @@ public class StudentManagement
         studentManagement.studentsByGroup();
 
         System.out.println("----------------");
-        studentManagement.removeStudent("000");
-
-        studentManagement.studentsByGroup();
 
     }
 }
